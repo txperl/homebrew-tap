@@ -5,21 +5,21 @@
 class Snipfly < Formula
   desc "A TUI tool for running multiple code snippets, in a single terminal tab."
   homepage "https://github.com/txperl/snipfly"
-  version "0.1.2"
+  version "0.1.3"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/txperl/snipfly/releases/download/v0.1.2/snipfly_0.1.2_darwin_amd64.tar.gz"
-      sha256 "d0849cb6394d87900e52d43a36213df495dae90af532f11af1ea4dbc993ac60f"
+      url "https://github.com/txperl/snipfly/releases/download/v0.1.3/snipfly_0.1.3_darwin_amd64.tar.gz"
+      sha256 "0a00ecab675d5d1c2a601bbebbbad3066c4bdd4a6294a2d3137cda50964c217b"
 
       define_method(:install) do
         bin.install "snipfly"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/txperl/snipfly/releases/download/v0.1.2/snipfly_0.1.2_darwin_arm64.tar.gz"
-      sha256 "a936f7f8c768592d2dcef8eaa2aa32089a4f8105b2e9ee1f051a3ce5fcc10c03"
+      url "https://github.com/txperl/snipfly/releases/download/v0.1.3/snipfly_0.1.3_darwin_arm64.tar.gz"
+      sha256 "6555a28fabb1743d225d35a01e80222e4fe6ea22503974087c937808b98bf800"
 
       define_method(:install) do
         bin.install "snipfly"
@@ -29,15 +29,15 @@ class Snipfly < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/txperl/snipfly/releases/download/v0.1.2/snipfly_0.1.2_linux_amd64.tar.gz"
-      sha256 "2f28d37201edaaad5799a595808fdf48d1c7d9755765e541bddd3df1f40fd639"
+      url "https://github.com/txperl/snipfly/releases/download/v0.1.3/snipfly_0.1.3_linux_amd64.tar.gz"
+      sha256 "3cc4d069314972c8704b2b1623a7bda9e27e6c2254465997649e8969a044a4d7"
       define_method(:install) do
         bin.install "snipfly"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/txperl/snipfly/releases/download/v0.1.2/snipfly_0.1.2_linux_arm64.tar.gz"
-      sha256 "1707ff23adac2c5a432f9b65441d6b3ffad5cd456e578e1ea8be6f99912ecb8d"
+      url "https://github.com/txperl/snipfly/releases/download/v0.1.3/snipfly_0.1.3_linux_arm64.tar.gz"
+      sha256 "157c8f6a093484b1012d2f055488a78a91daaf5d578a0150ea0bec98721e2e63"
       define_method(:install) do
         bin.install "snipfly"
       end
