@@ -11,7 +11,7 @@ class Easycommit < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/txperl/easycommit/releases/download/v0.1.0/easycommit_0.1.0_darwin_amd64.tar.gz"
-      sha256 "b003327cea22c06701860dfa4fd11d2e1ffaf69fea931262a88d73f8b8dfb636"
+      sha256 "9fcd61ddf29051a59774b943643db34301872233262a4cc4f2ce5021b00253a9"
 
       define_method(:install) do
         bin.install "easycommit"
@@ -19,7 +19,7 @@ class Easycommit < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/txperl/easycommit/releases/download/v0.1.0/easycommit_0.1.0_darwin_arm64.tar.gz"
-      sha256 "77bece64dfc7ea27891726080234f5e8e0ef3facd65c9cf5c9d18f97200a5373"
+      sha256 "0f5b85c5c37cd21b54e22060cfa333260d0532ccf18afc84a1ac33ddfe359d1f"
 
       define_method(:install) do
         bin.install "easycommit"
@@ -30,14 +30,14 @@ class Easycommit < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/txperl/easycommit/releases/download/v0.1.0/easycommit_0.1.0_linux_amd64.tar.gz"
-      sha256 "65f66e1196c0109f49dbf813531c1b31b3fecac6a5efb1a6bc9d448724187cea"
+      sha256 "24d6e1ea6fd1d9607c969e6108c162291ebb82d50902408ff1de43d579a17c59"
       define_method(:install) do
         bin.install "easycommit"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/txperl/easycommit/releases/download/v0.1.0/easycommit_0.1.0_linux_arm64.tar.gz"
-      sha256 "05132cd471a122960b65af4f9e20d87b9d9aa876ebb3f2f38ccd7a5b355ab5b4"
+      sha256 "53500ec4ae68b98b054ad43ed2db23d5628045b687b272ddacf6a63a38f318a9"
       define_method(:install) do
         bin.install "easycommit"
       end
